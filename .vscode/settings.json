@@ -1,7 +1,6 @@
 {
     "editor.rulers": [
-        90,
-        120
+        100
     ],
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
