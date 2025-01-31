@@ -7,11 +7,6 @@ license = "MIT"
 readme = "README.md"
 package-mode = false
 
-[[tool.poetry.source]]
-name = "pytorch-nightly"
-url = "https://download.pytorch.org/whl/nightly/cpu"
-priority = "explicit"
-
 [project]
 name = "iecompare"
 version = "0.1.0"
@@ -31,9 +26,6 @@ isort = "^5.13.2"
 flake8 = "7.0.0"
 mypy = "^1.10.0"
 pytest = "^8.2.0"
-pandas-stubs = "^2.2.1.240316"
-types-tqdm = "^4.66.0.20240417"
-tqdm-stubs = "^0.2.1"
 nbdime = "^4.0.1"
 jupyter-black = "^0.3.4"
 ipython = "^8.31.0"
