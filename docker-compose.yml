@@ -1,0 +1,26 @@
+services:
+  
+  jupyter:
+    image: rjurney/iecompare:0.1.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jupyter
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    env_file:
+      - .env
+    restart: always
+    command: start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''
+    deploy:
+      resources:
+        limits:
+          cpus: "8"
+          memory: 16G
+        reservations:
+          cpus: "4"
+          memory: 16G
