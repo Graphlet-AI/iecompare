@@ -22,7 +22,8 @@ version = "0.1.0"
 "Bug Tracker" = "https://github.com/Graphlet-AI/iecompare/issues"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.12"
+relik = "^1.0.7"
 
 [tool.poetry.group.dev.dependencies]
 black = { version = "^24.4.2", extras = ["jupyter"] }
