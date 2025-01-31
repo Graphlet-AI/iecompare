@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "iecompare"
+version = "0.1.0"
+description = "Source code for Three New Information Extraction (IE) Models Compared"
+authors = ["Russell Jurney <russell.jurney@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[[tool.poetry.source]]
+name = "pytorch-nightly"
+url = "https://download.pytorch.org/whl/nightly/cpu"
+priority = "explicit"
+
+[project]
+name = "iecompare"
+version = "0.1.0"
+
+[tool.poetry.urls]
+"Blog Post" = "https://blog.graphlet.ai"
+"Code Repository" = "https://github.com/Graphlet-AI/iecompare"
+"Bug Tracker" = "https://github.com/Graphlet-AI/iecompare/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = { version = "^24.4.2", extras = ["jupyter"] }
+isort = "^5.13.2"
+flake8 = "7.0.0"
+mypy = "^1.10.0"
+pytest = "^8.2.0"
+pandas-stubs = "^2.2.1.240316"
+types-tqdm = "^4.66.0.20240417"
+tqdm-stubs = "^0.2.1"
+nbdime = "^4.0.1"
+jupyter-black = "^0.3.4"
+ipython = "^8.31.0"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+include = '\.py$'
+src = "."
+
+[tool.isort]
+profile = "black"
+src_paths = ["."]
+
+[tool.mypy]
+python_version = "3.11"
+mypy_path = ["."]
+warn_return_any = true
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
