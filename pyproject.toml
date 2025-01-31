@@ -15,10 +15,13 @@ version = "0.1.0"
 "Blog Post" = "https://blog.graphlet.ai"
 "Code Repository" = "https://github.com/Graphlet-AI/iecompare"
 "Bug Tracker" = "https://github.com/Graphlet-AI/iecompare/issues"
+"Docker Image" = ""
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
 relik = "^1.0.7"
+numpy = "1.26.4"
+pypdf = "^5.2.0"
 
 [tool.poetry.group.dev.dependencies]
 black = { version = "^24.4.2", extras = ["jupyter"] }
