@@ -30,7 +30,9 @@ Windows is not supported. I'd appreciate Windows support as a contribution!
 
 ## Running the Code with Jupyter on Docker
 
-You can run Jupyter in Docker with the following command:
+There is a docker image available at [https://hub.docker.com/r/rjurney/iecompare](https://hub.docker.com/r/rjurney/iecompare) that has all the software you need to run the code in this repository.
+
+The image runs Jupyter sp you can run the notebooks for this project with the following command:
 
 ```bash
 docker compose up -d
